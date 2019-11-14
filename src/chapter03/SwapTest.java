@@ -3,14 +3,7 @@ package chapter03;
 public class SwapTest {
 
 	public static void main(String[] args) {
-//		int i = 10;
-//		int j = 20;
-//		System.out.println(i + ":" + j);
-//				
-//		swap(i,j);
-//		
-//		System.out.println(i + ":" + j);
-		
+
 		Value v1 = new Value();
 		v1.val = 10;
 		Value v2 = new Value();
