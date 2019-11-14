@@ -32,20 +32,11 @@ public class SwapTest {
 	}
 	
 		
-		public static void swap(int p, int q) {
+	public static void swap(int p, int q) {
 			int temp = p;
 			p = q;
 			q = temp;
 	}
-	
-	public static void swap(int p, int q) {
-		int temp = p;
-		p = q;
-		q = temp;
-	}
-	
-	
-	
-	
+		
 
 }
