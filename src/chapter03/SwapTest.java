@@ -3,26 +3,13 @@ package chapter03;
 public class SwapTest {
 
 	public static void main(String[] args) {
-		int i = 10;
-		int j = 20;
-		System.out.println(i + ":" + j);
-//		
-////		int temp = i;
-////		i = j;
-////		j = temp;
-//		
+//		int i = 10;
+//		int j = 20;
+//		System.out.println(i + ":" + j);
+//				
 //		swap(i,j);
 //		
 //		System.out.println(i + ":" + j);
-//		
-		
-
-	}
-	
-	public static void swap(int p, int q) {
-		int temp = p;
-		p = q;
-		q = temp;
 		
 		Value v1 = new Value();
 		v1.val = 10;
@@ -36,6 +23,7 @@ public class SwapTest {
 		
 	}
 	
+		
 	public static void swap2(Value p, Value q) {
 		int temp = p.val;
 		p.val = q.val;
@@ -43,6 +31,18 @@ public class SwapTest {
 		
 	}
 	
+		
+		public static void swap(int p, int q) {
+			int temp = p;
+			p = q;
+			q = temp;
+	}
+	
+	public static void swap(int p, int q) {
+		int temp = p;
+		p = q;
+		q = temp;
+	}
 	
 	
 	
