@@ -3,17 +3,8 @@ package chapter03;
 public class Goods {
 	public static int count; // new가 필요가 없음 진짜 변수
 	
-	public Goods() {
-		Goods.count += 1;
-		
-	}
 	
 	
-	
-	public static void showCount() {
-		System.out.println(Goods.count);
-		//static 은 static만 접근한다. 편의때문에
-	}
 	
 	private String name;
 	//접근지시자 3가지 알아야 할 것
@@ -23,6 +14,24 @@ public class Goods {
 	private int price;
 	private int countStock;	//7:26확인
 	private int countSold;
+	
+	public Goods(String name, int price, int countStock, int countSold) {
+		this.name = name;
+		this.price = price;
+		this.countStock = countStock;
+		this.countSold = countSold;
+		Goods.count += 1;
+	}
+	
+//	public Goods() {
+//		Goods.count += 1;
+//		
+//		
+//	}
+	public static void showCount() {
+		System.out.println(Goods.count);
+		//static 은 static만 접근한다. 편의때문에
+	}
 	
 	
 	public String getName() {
@@ -47,15 +56,21 @@ public class Goods {
 	public void setCountStock(int countStock) {
 		this.countStock = countStock;
 	}
+	// return 값이 없고 매개변수(parameter)가 있는 메소드
 	public int getCountSold() {
 		return countSold;
 	}
+	//return 값이 없고 매개변수(parameter)가 있는 메소드
 	public void setCountSold(int countSold) {
 		this.countSold = countSold;
 	}
 	
+	public int calcDiscountPrice(float discountRate) {
+		int discountPrice = (int) (price * discountRate);
+		return discountPrice;
+	}
 	
-	public void showInfo () {
+	public void showInfo () { // return 값과 매개변수(parameter)가 없는 메소드
 		
 		System.out.println(
 			"상품이름 : " + name + 
