@@ -14,11 +14,13 @@ public class PaintApp {
 		p.setY(10);
 		drawPoint(p);
 		
-		Point p2 = new Point();
-		p2.setX(50);
-		p2.setY(100);
+		Point p2 = new Point(50,100);
 		drawPoint(p2);
 		
+		//메소드 오버로딩 테스트
+		p2.show();
+		p2.show(true);
+		p2.show(false);
 	}
 
 	public static void drawPoint(Point point) {

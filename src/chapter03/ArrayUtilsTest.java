@@ -15,7 +15,7 @@ public class ArrayUtilsTest {
 		double[] d2 = {10.1, 11.2, 12.3, 13.4, 14.5};
 		int [] a2 = ArrayUtils.doubleToInt(d2);
 		for(int v : a2) {
-			System.out.print(v);
+			System.out.print(v + " ");
 			
 		}
 		System.out.print("\n");

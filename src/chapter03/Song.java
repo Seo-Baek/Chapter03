@@ -7,7 +7,32 @@ public class Song {
 	private String composer;
 	private int    year;
 	private int    track;
+	
+	public Song() {
+		
+	}
+	
+	public Song(String title, String artist) {
+//		this.title = title;
+//		this.artist = artist;
+		
+		this(title, artist, null, null, 0, 0);// 다른 생성자를 호출 다른 코드들도 같이 옴!
+	}
 
+	
+	public Song(String title, String artist, String album, String composer, int year, int track) {
+		this.title = title;
+		this.artist = artist;
+		this.album = album;
+		this.composer = composer;
+		this.year = year;
+		this.track = track;
+		
+		/*
+		 *  some codes....
+		 */
+	}
+	
 	
 	public String getTitle() {
 		return title;

@@ -4,6 +4,15 @@ public class Point {
 	private int x;
 	private int y;
 	
+	public Point(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+	
+	public Point() {
+		
+	}
+	
 	
 	public int getX() {
 		return x;
@@ -20,9 +29,20 @@ public class Point {
 	
 	
 	public void show() {
-		System.out.println("점[" + getX() + ", " + getY() + "]를 찍었습니다.");
+		System.out.println("점[" + x + ", " + y + "]를 찍었습니다.");
+	}
+	
+	public void show(boolean visable) {
+		if(visable) {
+			show();		// 반복을 줄인 효율적인 코딩 
+			
+		} else {
+			System.out.println("점[" + x + ", " + y + "]를 지웠습니다.");
+			
+		}
 		
 	}
 	
+
 	
 }
