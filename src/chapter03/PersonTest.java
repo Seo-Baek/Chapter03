@@ -17,6 +17,8 @@ public class PersonTest {
 		// private 는 내부에서만 가능하다.
 		//p.weight = 60;
 		
+		Student s = new Student();  // 자식 클래스를 부르면 부모클래스가 먼저 호출된다.
+		
 	}
 
 }

@@ -29,20 +29,11 @@ public class ArrayUtils {
 		int length2 = a4. length;
 		int length3 = length1 + length2;
 		int[] result3 = new int[length1];
-		int[] result4 = new int[length2];
-		int[] result5 = new int[length3];
-		while(true) {
-			for(int i = 0; i < length1; i++ ) {
-				result3[i] =  a3[i];
+			for(int i = 0; i < length3; i++ ) {
+				result3[i];
 			}
-			for(int j = 0; j < length2; j++) {
-				result4[j] = a4[j];
 		
-			}
-		result5[length3] = return4[j].concat(return3[i]);
-		break;
-		}
-		return result5;
+		return result3;
 			
 		}
 		

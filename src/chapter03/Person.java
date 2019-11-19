@@ -6,6 +6,10 @@ public class Person {
 	int age;
 	private int weight;
 	
+	public Person() {
+		System.out.println("Person() »£√‚");
+		
+	}
 	public void info() {
 		weight = 70;
 	}
