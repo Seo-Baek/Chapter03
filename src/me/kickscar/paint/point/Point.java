@@ -1,6 +1,8 @@
-package paint;
+package me.kickscar.paint.point;
 
-public class Point {
+import me.kickscar.paint.i.Drawable;
+
+public class Point implements Drawable {
 	private int x;
 	private int y;
 	
@@ -10,7 +12,7 @@ public class Point {
 	}
 	
 	public Point() {
-		
+		System.out.println("Point() »£√‚");
 	}
 	
 	
@@ -41,6 +43,16 @@ public class Point {
 			
 		}
 		
+	}
+
+	@Override
+	public void draw() {
+		show();
+		
+	}
+	@Override
+	public void draw(boolean visable) {
+		show(visable);
 	}
 	
 

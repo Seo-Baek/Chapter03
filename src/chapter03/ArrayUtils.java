@@ -28,9 +28,11 @@ public class ArrayUtils {
 		int length1 = a3.length;
 		int length2 = a4. length;
 		int length3 = length1 + length2;
-		int[] result3 = new int[length1];
+		
+		int[] result3 = new int[length3];
 			for(int i = 0; i < length3; i++ ) {
-				result3[i];
+				String s = String.valueOf(i);
+				System.out.println(s);
 			}
 		
 		return result3;
