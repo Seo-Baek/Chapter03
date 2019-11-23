@@ -60,8 +60,7 @@ public class PaintApp {
 		draw(new Circle());
 		draw(new GraphicText("Hello World"));
 		
-		Rect r1 = new Rect();
-		r1.allColors("Green", "Yellow");
+		
 		
 		//Shape s = new Shape();  <<추상클래스이기 때문에 호출이 되지 않는다!
 		
@@ -72,6 +71,7 @@ public class PaintApp {
 		System.out.println(s instanceof Shape);
 		System.out.println(s instanceof Rect);
 		System.out.println(s instanceof Triangle);
+		((Triangle) s).draw();
 		
 		Rect r = new Rect();
 		System.out.println(r instanceof Object);
@@ -91,6 +91,7 @@ public class PaintApp {
 		drawable.draw();
 	}
 	
+
 
 
 //	public static void drawPoint(Point point) {

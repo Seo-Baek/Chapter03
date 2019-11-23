@@ -21,7 +21,8 @@ public class ArrayUtilsTest {
 		System.out.print("\n");
 		
 		
-		int[] a3 = {100, 200, 300, 400};
+		int[] a3 = {100, 200, 300, 400
+				};
 		int[] a4 = {500, 600, 700, 800};
 		int[] a5 = ArrayUtils.concat(a3, a4);
 		for(int v:a5) {

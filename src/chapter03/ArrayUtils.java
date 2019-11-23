@@ -25,14 +25,15 @@ public class ArrayUtils {
 
 	
 	public static int[] concat(int[] a3, int[] a4) {
-		int length1 = a3.length;
-		int length2 = a4. length;
-		int length3 = length1 + length2;
+
+		int sumlength = a3.length + a4.length;
 		
-		int[] result3 = new int[length3];
-			for(int i = 0; i < length3; i++ ) {
-				String s = String.valueOf(i);
-				System.out.println(s);
+		int[] result3 = new int[sumlength];
+			for(int i = 0; i < a3.length; i++ ) {
+				result3[i] = a3[i];
+			}
+			for(int i = 0;  i < a4.length; i++) {
+				result3[a3.length+i] = a4[i];
 			}
 		
 		return result3;

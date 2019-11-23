@@ -10,27 +10,12 @@ public class Circle extends Shape {
 		System.out.println("원을 그렸습니다.");
 	}
 	
-	@Override
-	public void draw(boolean visable) {
-		if(visable) {
-			draw();		// 반복을 줄인 효율적인 코딩 
-			
-		} else {
-			System.out.println("원을 지웠습니다.");
-			
-		}
-		
-	}
-	@Override
-	public void allColors(String fillColor, String lineColor) {
-		System.out.println("원에 " + fillColor + ", " + lineColor + "를 채웠습니다.");
-	}
-	@Override
-	public void fillColors(String fillColor) {
-		System.out.println("원에 " + fillColor + "를 채웠습니다.");
-	}
-	@Override
-	public void lineColors(String lineColor) {
-		System.out.println("원에 " + lineColor + "를 채웠습니다.");
-	}
+	
+//	@Override
+//	public void draw(String c) {
+//		System.out.println("");
+//	}   자식이 부모의 메소드를 override할 때 overload로 할 수 없다.
+
+	
+
 }

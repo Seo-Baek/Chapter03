@@ -50,10 +50,6 @@ public class Point implements Drawable {
 		show();
 		
 	}
-	@Override
-	public void draw(boolean visable) {
-		show(visable);
-	}
 	
 
 	
